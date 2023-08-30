@@ -24,6 +24,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/angular-workshop-app",
+            "baseHref": "angular-workshop-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
