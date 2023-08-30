@@ -10,7 +10,7 @@ import { Video } from '../types'
   styleUrls: ['./video-list.component.css']
 })
 export class VideoListComponent {
-
+    videoList = videos;
 }
 
 
