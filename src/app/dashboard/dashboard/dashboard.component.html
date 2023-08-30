@@ -1,6 +1,9 @@
 <section>
-    <app-video-list [videoList]="videoList" />
+    <app-video-list 
+    [videoList]="videoList" 
+    (videoSelected)="selectedVideo = $event"
+    />
 </section>
 <section>
-    <app-video-player>video player works!</app-video-player>
+    <app-video-player [video]="selectedVideo">video player works!</app-video-player>
 </section>

@@ -13,6 +13,7 @@ import { Video } from '../types';
 })
 export default class DashboardComponent {
   videoList = videos;
+  selectedVideo: Video = this.videoList[0];
 }
 
 

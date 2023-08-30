@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Video } from '../types';
 
@@ -13,5 +13,10 @@ import { Video } from '../types';
 
 export class VideoListComponent {
   @Input() videoList: Video[] = [];
+  @Output() videoSelected = new EventEmitter<Video>();
+
+  selectVideo(video: Video) : void{
+    this.videoSelected.emit(video);
+  }
 }
 

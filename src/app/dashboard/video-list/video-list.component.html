@@ -1,5 +1,6 @@
-<div *ngFor = "let video of videoList">
+<button *ngFor = "let video of videoList" 
+    (click)="selectVideo(video)">
    <strong>{{video.title}}</strong>
     <br>{{video.author}}
     <br><br>
-</div>
+</button>
